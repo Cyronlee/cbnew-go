@@ -3,9 +3,11 @@
 
 # 推送方式
 ## [Server酱（微信）](http://sc.ftqq.com/3.version)
-登录到Server酱，绑定微信之后，获取到sckey即可。
+登录到Server酱，绑定微信之后，获取到sckey即可，样式如下  
+![ft](https://raw.githubusercontent.com/Cyronlee/cbnew-go/master/imgs/ft.png)
 ## [BARK（iOS）](https://github.com/Finb/Bark)
-在AppStore下载BARK，获取到barkkey（机器码）即可。
+在AppStore下载BARK，获取到barkkey（机器码）即可，样式如下  
+![bark](https://raw.githubusercontent.com/Cyronlee/cbnew-go/master/imgs/bark.png)
 
 # 使用
 在[Release页面](https://github.com/Cyronlee/cbnew-go/releases)下载对应平台的可执行文件  
