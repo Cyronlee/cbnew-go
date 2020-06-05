@@ -12,11 +12,15 @@
 # 使用
 在[Release页面](https://github.com/Cyronlee/cbnew-go/releases)下载对应平台的可执行文件  
 ```bash
-# sckey 和 barkkey 至少设置其中一个
+# 执行一次推送，sckey 和 barkkey 至少设置其中一个
 cbnew.exe -sckey=XXXX -barkkey=XXXX
 
-# 手动设置推送时间为 8:50，默认每天 9:00 分推送一次
-cbnew.exe -sckey=XXXX -h=8 -m=50
+# 定时执行任务，默认每天 9:00 分推送一次
+# -s (schedule)
+cbnew.exe -barkkey=XXXX -s
+
+# 手动设置推送时间为 8:50
+cbnew.exe -barkkey=XXXX -s -h=8 -m=50
 ```
 
 # 数据来源
