@@ -3,7 +3,7 @@ name: cbnew-push
 on:
   schedule:
     # 每工作日9:00执行
-    - cron: "0 0 9 ? * MON-FRI"
+    - cron: '0 9 * * 1-5'
 
 jobs:
 
@@ -19,4 +19,4 @@ jobs:
 
     - name: Run cbnew push job
       run: |
-        sudo bin/cbnew
+        sudo bin/cbnew ${{ secrets.BARK_KEY }}
