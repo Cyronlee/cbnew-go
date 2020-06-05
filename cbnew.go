@@ -11,20 +11,28 @@ import (
 )
 
 var (
-	sckey   string
-	barkkey string
-	hour    int
-	minute  int
+	schedule bool
+	sckey    string
+	barkkey  string
+	hour     int
+	minute   int
 )
 
 func main() {
-	fmt.Printf("运行中...每天%v时%v分推送\r\n", hour, minute)
-	startScheduler(hour, minute, time.Hour*24)
+	if schedule {
+		fmt.Printf("运行中...每天%v时%v分推送\r\n", hour, minute)
+		startScheduler(hour, minute, time.Hour*24)
+	} else {
+		fmt.Println("推送中...")
+		doJob()
+		fmt.Println("推送完成...")
+	}
 }
 
 func init() {
-	flag.StringVar(&sckey, "sckey", "", "请设置SKEY")
-	flag.StringVar(&sckey, "barkkey", "", "请设置barkkey")
+	flag.StringVar(&sckey, "sckey", "", "请设置SCKEY")
+	flag.StringVar(&barkkey, "barkkey", "", "请设置BarkKey")
+	flag.BoolVar(&schedule, "s", false, "请设置是否调度")
 	flag.IntVar(&hour, "h", 9, "请设置开始小时")
 	flag.IntVar(&minute, "m", 0, "请设置开始分钟")
 	flag.Parse()
