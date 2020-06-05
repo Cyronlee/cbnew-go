@@ -19,4 +19,6 @@ jobs:
 
     - name: Run cbnew push job
       run: |
-        sudo ./bin/cbnew -barkkey=${{ secrets.BARK_KEY }}
+        cd bin
+        chmod 773 cbnew
+        ./cbnew -barkkey=${{ secrets.BARK_KEY }}
