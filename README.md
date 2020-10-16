@@ -23,6 +23,9 @@ cbnew.exe -barkkey=XXXX -s
 cbnew.exe -barkkey=XXXX -s -h=8 -m=50
 ```
 
+# Github Actions
+使用Github Actions构建自动化推送，支持Cron调度，请参考本项目中的[Actions](https://github.com/Cyronlee/cbnew-go/actions)。
+
 # 数据来源
 - [集思录](https://www.jisilu.cn/data/cbnew/#pre)
 - [东方财富](http://data.eastmoney.com/kzz/default.html)
