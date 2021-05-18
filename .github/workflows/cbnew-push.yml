@@ -2,7 +2,7 @@ name: cbnew-push
 
 on:
   schedule:
-    # 每工作日9:00执行，转为UTC要-8小时
+    # 每工作日9:00执行，转为UTC要减8小时
     - cron: '0 1 * * 1-5'
 
 jobs:
