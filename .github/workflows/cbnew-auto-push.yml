@@ -1,4 +1,4 @@
-name: cbnew-push
+name: cbnew-auto-push
 
 on:
   schedule:
